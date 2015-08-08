@@ -109,6 +109,7 @@ minetest.register_node("digiline_touchscreen:touchscreen", {
 -- the screen
 minetest.register_entity("digiline_touchscreen:entity", {
 	collisionbox = {0,0,0, 0,0,0},
+	physical=false,
 	visual = "upright_sprite",
 	textures = {"digiline_touchscreen_bg.png"},
 	on_activate = function(self, staticdata)
