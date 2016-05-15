@@ -88,10 +88,9 @@ end
 minetest.register_node("digiline_touchscreen:touchscreen", {
 	description = "digiline controlled touchscreen",
 	drawtype = "nodebox",
-	tiles = "digiline_touchscreen.png",
+	tiles = {"digiline_touchscreen.png"},
 	paramtype = "light",
 	--paramtype2 = "facedir",
-	is_ground_content = false,
 	groups = {cracky=3, oddly_breakable_by_hand=2},
 	sounds = default.node_sound_stone_defaults(),
 	node_box = {
